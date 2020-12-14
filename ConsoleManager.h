@@ -883,7 +883,7 @@ for(int x=0;x<cant;x++){
         gotoxy(_x+(x*15),_y+5);cout<<char(219)<<char(219)<<char(177)<<char(177)<<char(219)<<char(219);
         gotoxy(_x+(x*15),_y+6);cout<<char(219)<<char(219)<<char(177)<<char(177)<<char(219)<<char(219);
         gotoxy(_x+(x*15),_y+7);cout<<char(219)<<char(219)<<char(177)<<char(177)<<char(219)<<char(219);
-        gotoxy(_x+(x*15),_y+8);cout<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219);
+        gotoxy(_x+(x*15),_y+8);cout<<char(219)<<char(219)<<char(177)<<char(177)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219);
         gotoxy(_x+(x*15),_y+9);cout<<char(219)<<char(219)<<char(177)<<char(177)<<char(177)<<char(177)<<char(177)<<char(177)<<char(177)<<char(177)<<char(177)<<char(177)<<char(219)<<char(219);
         gotoxy(_x+(x*15),_y+10);cout<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219);
     break;
@@ -1018,17 +1018,17 @@ for(int x=0;x<cant;x++){
         gotoxy(_x+(x*15),_y+10);cout<<char(219)<<char(219)<<char(219)<<char(219)<<"      "<<char(219)<<char(219)<<char(219)<<char(219);
     break;
     case 'n':
-        gotoxy(_x+(x*15),_y);cout<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)  <<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219);
-        gotoxy(_x+(x*15),_y+1);cout<<char(219)<<char(219)<<char(177)<<char(177)<<char(219)<<char(219)  <<char(219)<<char(219)<<char(177)<<char(177)<<char(219)<<char(219);
-        gotoxy(_x+(x*15),_y+2);cout<<char(219)<<char(177)<<char(177)<<char(177)<<char(219)<<char(219) <<char(219)<<char(219)<<char(177)<<char(177)<<char(219)<<char(219);
+        gotoxy(_x+(x*15),_y);cout<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<"  "<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219);
+        gotoxy(_x+(x*15),_y+1);cout<<char(219)<<char(219)<<char(177)<<char(177)<<char(219)<<char(219)<<"  "<<char(219)<<char(219)<<char(177)<<char(177)<<char(219)<<char(219);
+        gotoxy(_x+(x*15),_y+2);cout<<char(219)<<char(219)<<char(177)<<char(177)<<char(219)<<char(219)<<"  "<<char(219)<<char(219)<<char(177)<<char(177)<<char(219)<<char(219);
         gotoxy(_x+(x*15),_y+3);cout<<char(219)<<char(219)<<char(177)<<char(177)<<char(177)<<char(177)<<char(219)<<char(219)<<char(219)<<char(219)<<char(177)<<char(177)<<char(219)<<char(219);
         gotoxy(_x+(x*15),_y+4);cout<<char(219)<<char(219)<<char(177)<<char(177)<<char(177)<<char(177)<<char(177)<<char(219)<<char(219)<<char(219)<<char(177)<<char(177)<<char(219)<<char(219);
         gotoxy(_x+(x*15),_y+5);cout<<char(219)<<char(219)<<char(177)<<char(177)<<char(177)<<char(177)<<char(177)<<char(177)<<char(177)<<char(177)<<char(177)<<char(177)<<char(219)<<char(219);
         gotoxy(_x+(x*15),_y+6);cout<<char(219)<<char(219)<<char(177)<<char(177)<<char(219)<<char(219)<<char(219)<<char(177)<<char(177)<<char(177)<<char(177)<<char(177)<<char(219)<<char(219);
         gotoxy(_x+(x*15),_y+7);cout<<char(219)<<char(219)<<char(177)<<char(177)<<char(219)<<char(219)<<char(219)<<char(219)<<char(177)<<char(177)<<char(177)<<char(177)<<char(219)<<char(219);
-        gotoxy(_x+(x*15),_y+8);cout<<char(219)<<char(219)<<char(177)<<char(177)<<char(219)<<char(219) <<char(219)<<char(219)<<char(177)<<char(177)<<char(177)<<char(219)<<char(219);
-        gotoxy(_x+(x*15),_y+9);cout<<char(219)<<char(219)<<char(177)<<char(177)<<char(219)<<char(219)  <<char(219)<<char(219)<<char(177)<<char(177)<<char(219);
-        gotoxy(_x+(x*15),_y+10);cout<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)  <<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219);
+        gotoxy(_x+(x*15),_y+8);cout<<char(219)<<char(219)<<char(177)<<char(177)<<char(219)<<char(219)<<"  "<<char(219)<<char(219)<<char(177)<<char(177)<<char(219)<<char(219);
+        gotoxy(_x+(x*15),_y+9);cout<<char(219)<<char(219)<<char(177)<<char(177)<<char(219)<<char(219)<<"  "<<char(219)<<char(219)<<char(177)<<char(177)<<char(219)<<char(219);
+        gotoxy(_x+(x*15),_y+10);cout<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<"  "<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219);
     break;
     case 'o':
         gotoxy(_x+(x*15),_y);cout<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219);
@@ -1144,7 +1144,7 @@ for(int x=0;x<cant;x++){
         gotoxy(_x+(x*15),_y+6);cout<<char(219)<<char(219)<<char(177)<<char(219)<<" "<<char(219)<<char(177)<<char(177)<<char(219)<<" "<<char(219)<<char(177)<<char(219)<<char(219);
         gotoxy(_x+(x*15),_y+7);cout<<char(219)<<char(219)<<char(177)<<char(219)<<char(219)<<char(219)<<char(177)<<char(177)<<char(219)<<char(219)<<char(219)<<char(177)<<char(219)<<char(219);
         gotoxy(_x+(x*15),_y+8);cout<<char(219)<<char(219)<<char(177)<<char(177)<<char(177)<<char(177)<<char(177)<<char(177)<<char(177)<<char(177)<<char(177)<<char(177)<<char(219)<<char(219);
-        gotoxy(_x+(x*15),_y+9);cout<<char(219)<<char(219)<<char(177)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(177)<<char(219);
+        gotoxy(_x+(x*15),_y+9);cout<<char(219)<<char(219)<<char(177)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(219)<<char(177)<<char(219)<<char(219);
         gotoxy(_x+(x*15),_y+10);cout<<char(219)<<char(219)<<char(219)<<char(219)<<"     "<<char(219)<<char(219)<<char(219)<<char(219)<<char(219);
     break;
     case 'x':
