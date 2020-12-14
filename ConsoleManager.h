@@ -139,6 +139,7 @@ while(true){
             if(pos<1){pos=2;}
         break;
         case 13: //ENTER
+            color("default");
             return pos;
         }
         switch(pos){
@@ -177,6 +178,7 @@ while(true){
             if(pos<1){pos=3;}
         break;
         case 13: //ENTER
+            color("default");
             return pos;
         }
         switch(pos){
@@ -230,6 +232,7 @@ while(true){
             if(pos<1){pos=4;}
         break;
         case 13: //ENTER
+            color("default");
             return pos;
         }
         switch(pos){
@@ -302,6 +305,7 @@ while(true){
             if(pos<1){pos=5;}
         break;
         case 13: //ENTER
+            color("default");
             return pos;
         }
         switch(pos){
@@ -398,6 +402,7 @@ while(true){
             if(pos<1){pos=2;}
         break;
         case 13: //ENTER
+            color("default");
             return pos;
         }
         switch(pos){
@@ -436,6 +441,7 @@ while(true){
             if(pos<1){pos=3;}
         break;
         case 13: //ENTER
+            color("default");
             return pos;
         }
         switch(pos){
@@ -489,6 +495,7 @@ while(true){
             if(pos<1){pos=4;}
         break;
         case 13: //ENTER
+            color("default");
             return pos;
         }
         switch(pos){
@@ -561,6 +568,7 @@ while(true){
             if(pos<1){pos=5;}
         break;
         case 13: //ENTER
+            color("default");
             return pos;
         }
         switch(pos){
