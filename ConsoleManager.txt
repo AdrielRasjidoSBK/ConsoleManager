@@ -2,31 +2,57 @@ Fundadores de la biblioteca "ConsoleManager":
 Adriel Elian Rasjido - Alan Gabriel Vaca.
 
 (Biblioteca colaborativa - UTN FRGP)
+PARA MAS INFO MIRAR VIDEO DE YOUTUBE Y/O CONSULTAR EN EL DISCORD
+
+AVERTENCIA: ESTE DOCUMENTO NO DEBE SER BORRADO EN LA IMPLEMENTACION DE TU PROYECTO
+ASI MISMO LOS DESCARGABLES COMO LA "LICENCE" Y EL ".H"
 
 NOTAS DE ACTUALIZACIONES:
 
-Version 1.X: // Partipantes de esta version: Adriel Elian Rasjido / Alan Gabriel Vaca:
+Version 1.X: // Partipantes de esta version: 
+Adriel Elian Rasjido 
+Alan Gabriel Vaca
+Jose Enrique Menendez
 
-1-titulo 		(permite cambiar el titulo de la consola)
-2-gotoxy 		(ubica la entrada en la posicion x,y)
-3-cursor 		(visualiza el cursor de entrada)
-4-recuadro 		(realiza recuadros o cuadros)
-5-gamadecolores 	(visualiza toda la gama de colores)
-6-color 		(permite cambiar el color del texto)
-7-fondo 		(permite cambiar el color del background)
-8-menuvertical 		(crea menues verticales de 2 a 5 opciones)
-9-menuhorizontal 	(crea menues horizontales de 2 a 5 opciones)
-10-probabilidad 	(facilita la posibilidad de crear una i.a simple con probabilidades)
-11-margentextoescribir 	(permite ingresar dentro de un marge establecido)
-12-margentextomostrar 	(permite mostrar lo ingresado dentro de un margen establecido)
-13-numeros 		(crea numeros grandes para tu programa)
-14-letras 		(crea letras grandes para tu programa)
-15-notas 		(puedes reproducir las 7 notas musicales a gusto)
+1-titulo 		  
+(permite cambiar el titulo de la consola)
+2-gotoxy 		
+(ubica la entrada en la posicion x,y)
+3-cursor 		
+(visualiza el cursor de entrada)
+4-recuadro 		
+(realiza recuadros o cuadros)
+5-gamadecolores 	
+(visualiza toda la gama de colores)
+6-color 		
+(permite cambiar el color del texto)
+7-fondo 		
+(permite cambiar el color del background)
+8-menuvertical 		
+(crea menues verticales de 2 a 5 opciones)
+9-menuhorizontal 	
+(crea menues horizontales de 2 a 5 opciones)
+10-probabilidad 	
+(facilita la posibilidad de crear una i.a simple con probabilidades)
+11-margentextoescribir 	
+(permite ingresar dentro de un marge establecido)
+12-margentextomostrar 	
+(permite mostrar lo ingresado dentro de un margen establecido)
+13-numeros 		
+(crea numeros grandes para tu programa)
+14-letras 		
+(crea letras grandes para tu programa)
+15-notas 		
+(puedes reproducir las 7 notas musicales a gusto)
 
 ENLACES:
-
+UTNFRGP:
+https://www.frgp.utn.edu.ar
 Canal Oficial de Youtube:
-
+https://www.youtube.com/channel/UCS_-386mFHUuaviv4DWTAjg
+Video Introductorio:
+https://youtu.be/RI5D2YiKIh8
 Repositorio:
-
+https://github.com/AdrielRasjidoSBK/ConsoleManager
 Discord de la comunidad:
+https://discord.gg/NmC7wSjeCT
