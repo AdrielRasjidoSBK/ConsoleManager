@@ -90,7 +90,7 @@ void recuadro(short x, short y, short ancho, short alto){
 void gamaColores(){
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
     for(int k = 1; k < 255; k++){SetConsoleTextAttribute(hConsole, k);
-    cout << k << "Gracias por usar ConsoleManager :)" << endl;
+    cout << k << " Gracias por usar ConsoleManager :)" << endl;
   }
 }
 /**
@@ -115,29 +115,29 @@ else if(strcmp(nombre,"default")==0)    {SetConsoleTextAttribute(hConsole,7);}
 void fondo(char* color){
 if(strcmp(color,"default")==0){system("color 07");}
 }
-void fondo(char *color_fondo, char *color_texto){
-int letra; int fondo;
-if(strcmp(color_texto,"negro")==0)           {letra=0;}
-else if(strcmp(color_texto,"azul")==0)       {letra=1;}
-else if(strcmp(color_texto,"verde")==0)      {letra=2;}
-else if(strcmp(color_texto,"aguamarina")==0) {letra=3;}
-else if(strcmp(color_texto,"rojo")==0)       {letra=4;}
-else if(strcmp(color_texto,"purpura")==0)    {letra=5;}
-else if(strcmp(color_texto,"amarillo")==0)   {letra=6;}
-else if(strcmp(color_texto,"blanco")==0)     {letra=7;}
-else if(strcmp(color_texto,"gris")==0)       {letra=8;}
-else if(strcmp(color_texto,"celeste")==0)    {letra=11;}
+void fondo(char* color_fondo, char* color_texto){
+string letra; string fondo;
+if(strcmp(color_texto,"negro")==0)           {letra="0";}
+else if(strcmp(color_texto,"azul")==0)       {letra="1";}
+else if(strcmp(color_texto,"verde")==0)      {letra="2";}
+else if(strcmp(color_texto,"aguamarina")==0) {letra="3";}
+else if(strcmp(color_texto,"rojo")==0)       {letra="4";}
+else if(strcmp(color_texto,"purpura")==0)    {letra="5";}
+else if(strcmp(color_texto,"amarillo")==0)   {letra="6";}
+else if(strcmp(color_texto,"blanco")==0)     {letra="7";}
+else if(strcmp(color_texto,"gris")==0)       {letra="8";}
+else if(strcmp(color_texto,"celeste")==0)    {letra="11";}
 
-if(strcmp(color_fondo,"negro")==0)           {fondo=0;}
-else if(strcmp(color_fondo,"azul")==0)       {fondo=1;}
-else if(strcmp(color_fondo,"verde")==0)      {fondo=2;}
-else if(strcmp(color_fondo,"aguamarina")==0) {fondo=3;}
-else if(strcmp(color_fondo,"rojo")==0)       {fondo=4;}
-else if(strcmp(color_fondo,"purpura")==0)    {fondo=5;}
-else if(strcmp(color_fondo,"amarillo")==0)   {fondo=6;}
-else if(strcmp(color_fondo,"blanco")==0)     {fondo=7;}
-else if(strcmp(color_fondo,"gris")==0)       {fondo=8;}
-else if(strcmp(color_fondo,"celeste")==0)    {fondo=11;}
+if(strcmp(color_fondo,"negro")==0)           {fondo="0";}
+else if(strcmp(color_fondo,"azul")==0)       {fondo="1";}
+else if(strcmp(color_fondo,"verde")==0)      {fondo="2";}
+else if(strcmp(color_fondo,"aguamarina")==0) {fondo="3";}
+else if(strcmp(color_fondo,"rojo")==0)       {fondo="4";}
+else if(strcmp(color_fondo,"purpura")==0)    {fondo="5";}
+else if(strcmp(color_fondo,"amarillo")==0)   {fondo="6";}
+else if(strcmp(color_fondo,"blanco")==0)     {fondo="7";}
+else if(strcmp(color_fondo,"gris")==0)       {fondo="8";}
+else if(strcmp(color_fondo,"celeste")==0)    {fondo="11";}
 std::string colores = "color " + fondo + letra;
 system(colores.c_str());
 }
@@ -588,7 +588,7 @@ Probabilidades:
 //Al llamar esta funcion se solicitara "1 de cada x intentos" tiene la probabilidad de crear una accion
 bool probabilidad(int num){
 srand(time(NULL)); int probable=rand()%(101-1);
-if(num>=probable){cout<<probable;return true;} return false;
+if(num>=probable){return true;} return false;
 }
 
 /**
