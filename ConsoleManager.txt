@@ -1,23 +1,26 @@
 ------------------------------------------------------------------------
-
+------------------------------------------------------------------------
 Fundadores de la biblioteca "ConsoleManager":
 Adriel Elian Rasjido - Alan Gabriel Vaca.
-
+------------------------------------------------------------------------
 ------------------------------------------------------------------------
 
-(Biblioteca colaborativa - UTN FRGP)
+(BIBLIOTECA COLABORATIVA - UTN FRGP)
 PARA MAS INFO MIRAR VIDEO DE YOUTUBE Y/O CONSULTAR EN EL DISCORD
 
 AVERTENCIA: ESTE DOCUMENTO NO DEBE SER BORRADO EN LA IMPLEMENTACION DE 
 TU PROYECTO ASI MISMO LOS DESCARGABLES COMO LA "LICENCE" Y EL ".H"
 
 ------------------------------------------------------------------------
+------------------------------------------------------------------------
 NOTAS DE ACTUALIZACIONES:
 ------------------------------------------------------------------------
-VERSION 1.X: // Partipantes de esta version: 
-Adriel Elian Rasjido 
-Alan Gabriel Vaca
-Jose Enrique Menendez
+------------------------------------------------------------------------
+VERSION 1.X: // PARTICIPANTES DE LA VERSION:
+
+-ADRIEL ELIAN RASJIDO
+-ALAN GABRIEL VACA
+-JOSE ENRIQUE MENENDEZ
 ------------------------------------------------------------------------
 
 F01-TITULO			CREA UN TITULO A LA VENTANA
@@ -37,11 +40,13 @@ F14-LETRAS			CREA LETRAS GRANDES
 F15-NOTAS			SONARAN LAS NOTAS MUSICALES 
 
 ------------------------------------------------------------------------
-VERSION 2.X: // Partipantes de esta version: 
-Adriel Elian Rasjido 
-Alan Gabriel Vaca
-Jose Enrique Menendez
-Yesica Regina Laurentino Goncalves
+------------------------------------------------------------------------
+VERSION 2.X: // PARTICIPANTES DE LA VERSION:
+
+-ADRIEL ELIAN RASJIDO
+-ALAN GABRIEL VACA
+-JOSE ENRIQUE MENENDEZ
+-YESICA REGINA LAURENTINO GONCALVES
 ------------------------------------------------------------------------
 
 F16-CONSOLEMANAGER		ACCESO A LA PRESENTACION Y LINKS
@@ -63,21 +68,38 @@ P28-COLOR TEXTUAL		NUEVOS COLORES AGREGADOS
 P29-GOTOXY			SOLUCION AL ERROR DE PARAMETROS
 P30-FONDO			NUEVOS COLORES AGREGADS
 
+
+------------------------------------------------------------------------
 ------------------------------------------------------------------------
 ENLACES:
 ------------------------------------------------------------------------
-UTNFRGP:
+------------------------------------------------------------------------
+
+UTNFRGP PAGINA OFICIAL:
 https://www.frgp.utn.edu.ar
+
 ------------------------------------------------------------------------
-Canal Oficial de Youtube:
+
+CANAL OFICIAL DE YOUTUBE
 https://www.youtube.com/channel/UCS_-386mFHUuaviv4DWTAjg
+
+¿QUE ES CONSOLE MANAGER.H?
+https://www.youtube.com/watch?v=RI5D2YiKIh8
+
+¿COMO USAR LA VERSION 1.X?
+https://www.youtube.com/watch?v=x2qKqkqx3kk
+
+¿COMO USAR LA VERSION 2.X?
+https://www.youtube.com/watch?v=mRKZonPx4pw
+
 ------------------------------------------------------------------------
-Video Introductorio:
-https://youtu.be/RI5D2YiKIh8
-------------------------------------------------------------------------
-Repositorio:
+
+REPOSITORIO DE GITHUB
 https://github.com/AdrielRasjidoSBK/ConsoleManager
+
 ------------------------------------------------------------------------
-Discord de la comunidad:
+
+DISCORD DE LA COMUNIDAD
 https://discord.gg/NmC7wSjeCT
+
 ------------------------------------------------------------------------
