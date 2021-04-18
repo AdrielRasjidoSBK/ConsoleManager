@@ -6,23 +6,26 @@
 #include<string.h>
 #include<string>
 #include<string.h>
-#include<windows.h>
 #include<iostream>
 #include<conio.h>
 #include<time.h>
+#include<windows.h>
+#include <wincon.h>
 
 using namespace std;
 
 
 /**
-Version 1.X
+Version 2.X
 Fundadores de la biblioteca "ConsoleManager" - Adriel Elian Rasjido - Alan Gabriel Vaca
 Biblioteca Colaborativa - UTN FRGP.
 
 Integrantes:
--Adriel Elian Rasjido
--Alan Gabriel Vaca
--José Enrique Menéndez Fernández
+-VERSION+ DESAROLLADOR/A
+-BETA 1.X Adriel Elian Rasjido
+-BETA 1.X Alan Gabriel Vaca
+-CM_V 1.X José Enrique Menéndez Fernández
+-CM_V 2.X Yesica Regina Laurentino Goncalves
 
 AVISO*****(esta es una biblioteca para soporte visual y/o funciones secundarias,
            idea para acortar el tiempo de diseño y asi los usuarios puedan
@@ -48,10 +51,18 @@ Y ser aprobado por los administradores en un cuestionario.
 Puedes ser postulante de ideas que seran usadas para futuras actualizacion.
 **/
 
+///VERSION 1.X EN ADELANTE
+/*
+Esta actualizacion trae 10 nuevas funciones
+PARA MAS INFO VER EL VIDEO 1X
+*/
+
 ///Titulo
+//Solicita el nombre del titulo
 void titulo(const char* nombrar){SetConsoleTitle(nombrar);}
 
 ///Gotoxy
+//Solicitara los ejes X / Y para ubicarse
 void gotoxy(int x,int y){
       HANDLE hcon;
       hcon = GetStdHandle(STD_OUTPUT_HANDLE);
@@ -59,11 +70,11 @@ void gotoxy(int x,int y){
       SetConsoleCursorPosition(hcon,dwPos);
  }
 
-/**
-Visualizadores:
-*/
+///HANDLE (DECLARACION NO BORRAR)
 HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-//Al llamar esta funcion mostrar la ubicacion del cursor
+
+///CURSOR
+//Habilita con TRUE y desabilita con FALSE
 void cursor(bool estado){
     HANDLE out = GetStdHandle(STD_OUTPUT_HANDLE);
     CONSOLE_CURSOR_INFO     cursorInfo;
@@ -71,6 +82,8 @@ void cursor(bool estado){
     cursorInfo.bVisible = estado;
     SetConsoleCursorInfo(out, &cursorInfo);
 }
+
+///RECUADRO
 //Al llamar esta funcion se podra crear recuadros
 void recuadro(short x, short y, short ancho, short alto){
     int i, j;
@@ -86,6 +99,9 @@ void recuadro(short x, short y, short ancho, short alto){
         }
     }
 }
+
+
+///GAMA DE COLORES
 //Se podra visualizar toda la gama completa de colores
 void gamaColores(){
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
@@ -93,9 +109,7 @@ void gamaColores(){
     cout << k << " Gracias por usar ConsoleManager :)" << endl;
   }
 }
-/**
-Colores:
-*/
+///COLOR
 //Al llamar esta funcion se solicitara el nombre del color en español
 void color(const char* nombre){
 if(strcmp(nombre,"negro")==0)           {SetConsoleTextAttribute(hConsole,0);}
@@ -103,14 +117,18 @@ else if(strcmp(nombre,"azul")==0)       {SetConsoleTextAttribute(hConsole,1);}
 else if(strcmp(nombre,"verde")==0)      {SetConsoleTextAttribute(hConsole,2);}
 else if(strcmp(nombre,"aguamarina")==0) {SetConsoleTextAttribute(hConsole,3);}
 else if(strcmp(nombre,"rojo")==0)       {SetConsoleTextAttribute(hConsole,4);}
-else if(strcmp(nombre,"purpura")==0)    {SetConsoleTextAttribute(hConsole,5);}
+else if(strcmp(nombre,"morado")==0)     {SetConsoleTextAttribute(hConsole,5);}
 else if(strcmp(nombre,"amarillo")==0)   {SetConsoleTextAttribute(hConsole,6);}
 else if(strcmp(nombre,"blanco")==0)     {SetConsoleTextAttribute(hConsole,7);}
 else if(strcmp(nombre,"gris")==0)       {SetConsoleTextAttribute(hConsole,8);}
+else if(strcmp(nombre,"verdeclaro")==0) {SetConsoleTextAttribute(hConsole,10);}
 else if(strcmp(nombre,"celeste")==0)    {SetConsoleTextAttribute(hConsole,11);}
+else if(strcmp(nombre,"salmon")==0)     {SetConsoleTextAttribute(hConsole,12);}
+else if(strcmp(nombre,"violeta")==0)    {SetConsoleTextAttribute(hConsole,13);}
 else if(strcmp(nombre,"default")==0)    {SetConsoleTextAttribute(hConsole,7);}
 }
 
+///FONDO
 //Al llamar esta funcion se solicitara el nombre del color tanto del fondo como el del texto
 void fondo(char* color){
 if(strcmp(color,"default")==0){system("color 07");}
@@ -122,31 +140,34 @@ else if(strcmp(color_texto,"azul")==0)       {letra="1";}
 else if(strcmp(color_texto,"verde")==0)      {letra="2";}
 else if(strcmp(color_texto,"aguamarina")==0) {letra="3";}
 else if(strcmp(color_texto,"rojo")==0)       {letra="4";}
-else if(strcmp(color_texto,"purpura")==0)    {letra="5";}
+else if(strcmp(color_texto,"morado")==0)     {letra="5";}
 else if(strcmp(color_texto,"amarillo")==0)   {letra="6";}
 else if(strcmp(color_texto,"blanco")==0)     {letra="7";}
 else if(strcmp(color_texto,"gris")==0)       {letra="8";}
+else if(strcmp(color_texto,"verdeclaro")==0) {letra="10";}
 else if(strcmp(color_texto,"celeste")==0)    {letra="11";}
+else if(strcmp(color_texto,"salmon")==0)     {letra="12";}
+else if(strcmp(color_texto,"violeta")==0)    {letra="13";}
 
 if(strcmp(color_fondo,"negro")==0)           {fondo="0";}
 else if(strcmp(color_fondo,"azul")==0)       {fondo="1";}
 else if(strcmp(color_fondo,"verde")==0)      {fondo="2";}
 else if(strcmp(color_fondo,"aguamarina")==0) {fondo="3";}
 else if(strcmp(color_fondo,"rojo")==0)       {fondo="4";}
-else if(strcmp(color_fondo,"purpura")==0)    {fondo="5";}
+else if(strcmp(color_fondo,"morado")==0)     {fondo="5";}
 else if(strcmp(color_fondo,"amarillo")==0)   {fondo="6";}
 else if(strcmp(color_fondo,"blanco")==0)     {fondo="7";}
 else if(strcmp(color_fondo,"gris")==0)       {fondo="8";}
+else if(strcmp(color_fondo,"verdeclaro")==0) {fondo="10";}
 else if(strcmp(color_fondo,"celeste")==0)    {fondo="11";}
+else if(strcmp(color_fondo,"salmon")==0)     {letra="12";}
+else if(strcmp(color_fondo,"violeta")==0)    {letra="13";}
 std::string colores = "color " + fondo + letra;
 system(colores.c_str());
 }
 
-/**
-Menues prediseñados:
-*/
 //Al llamar estas funcion se te solicitara las posiciones y las opciones
-///Menues verticales
+///MENUES VERTICALES
 int menuVertical_2(int x, int y, int ancho, char *opc1, char *opc2){
 cursor(false); int opc, pos=1;
 while(true){
@@ -366,7 +387,7 @@ while(true){
     }
 }
 
-///Menues horizontales
+///MENUES HORIZONTALES
 int menuHorizontal_2(int x,int y, int ancho, char *opc1, char *opc2){
 cursor(false);
 int opc, pos=1;
@@ -582,18 +603,14 @@ while(true){
     }
 }
 
-/**
-Probabilidades:
-*/
+///PROBABILIDAD
 //Al llamar esta funcion se solicitara "1 de cada x intentos" tiene la probabilidad de crear una accion
 bool probabilidad(int num){
 srand(time(NULL)); int probable=rand()%(101-1);
 if(num>=probable){return true;} return false;
 }
 
-/**
-Margenes de texto:
-*/
+///MARGENES
 //Al llamar esta funcion se solicitara cadena de numeros(esta actuara como cadena de caracteres)
 //posiciones x,y - el tamaño del vector, numero restrictor de caracteres
 int margenTextoEscribir(int *texto, int x, int y, int tam, int restriccion){
@@ -608,7 +625,6 @@ while(tecla!=13){
     else{px--;t-=2;cout<<" ";px--;}
 }return *texto;
 }
-
 //Al llamar esta funcion se solicitara cadena de numeros(esta actuara como cadena de caracteres) anteriormente ingresado
 //posiciones x,y - el tamaño del vector, numero restrictor de caracteres
 void margenTextoMostrar(int *texto,int x, int y, int tam, int restriccion){
@@ -621,10 +637,8 @@ void margenTextoMostrar(int *texto,int x, int y, int tam, int restriccion){
     }
 }
 
-/**
-Logos
-*/
-///Numeros
+///NUMEROS
+//Solicitara el Numero y los Ejes
 void numeros(char* _num,int _x, int _y){
 int cant = 0;
 while(_num[cant]!=NULL){cant++;}
@@ -764,7 +778,8 @@ for(int x=0;x<cant;x++){
 }
 }
 
-///Letras
+///LETRA
+//Solicitara el Texto y los Ejes
 void letras(string texto,int _x, int _y){
 char const *cadena = texto.c_str();
 int cant = texto.length();
@@ -1112,15 +1127,423 @@ for(int x=0;x<cant;x++){
 }
 }
 
-///Tonos de Beeps
+///Notas de Beeps
+//Solicitara la nota (DO,RE,MI,FA,SOL,LA,SI)
 void notas(string nota,int octava,int duracion){
-if (nota=="do"){Beep(261*octava,100*duracion);}
-if (nota=="re"){Beep(293*octava,100*duracion);}
-if (nota=="mi"){Beep(329*octava,100*duracion);}
-if (nota=="fa"){Beep(349*octava,100*duracion);}
-if (nota=="sol"){Beep(392*octava,100*duracion);}
-if (nota=="la"){Beep(440*octava,100*duracion);}
-if (nota=="si"){Beep(493*octava,100*duracion);}
+if (octava>=5){octava=5;}
+if (nota=="do"||nota=="DO"){Beep(261*octava,100*duracion);}
+else if (nota=="re"||nota=="RE"){Beep(293*octava,100*duracion);}
+else if (nota=="mi"||nota=="MI"){Beep(329*octava,100*duracion);}
+else if (nota=="fa"||nota=="FA"){Beep(349*octava,100*duracion);}
+else if (nota=="sol"||nota=="SOL"){Beep(392*octava,100*duracion);}
+else if (nota=="la"||nota=="LA"){Beep(440*octava,100*duracion);}
+else if (nota=="si"||nota=="SI"){Beep(493*octava,100*duracion);}
+else{cout<<"Nota invalida";}
+}
+
+///VERSION 2.X EN ADELANTE
+/*
+Esta actualizacion trae 10 nuevas funciones y
+contiene un parche a errores anteriores de otras funciones pasadas
+PARA MAS INFO VER EL VIDEO 2X
+*/
+
+///ACCESO A LOS LINKS E INFO
+//Solicita numero de version desde 0 en adelante
+void ConsoleManager(int version){
+switch(version){
+case 0:
+	system("start https://www.youtube.com/watch?v=RI5D2YiKIh8");
+break;
+case 1:
+	system("start https://www.youtube.com/watch?v=x2qKqkqx3kk");
+break;
+case 2:
+	system("start https://www.youtube.com/watch?v=mRKZonPx4pw");
+break;
+default:
+	system("start https://www.youtube.com/channel/UCS_-386mFHUuaviv4DWTAjg");
+break;
+}
+}
+
+///Ajuste de la pantalla
+//Solitara la cantidad de Columnas y Filas
+void pantalla(int columnas, int filas){
+char ejex[3],ejey[3];
+itoa(columnas,ejex,10); itoa(filas,ejey,10);
+string code1 = "mode con: cols=";
+string code2 = " lines=";
+string comando =  code1 + ejex + code2 + ejey;
+system(comando.c_str());
+}
+
+///Tonos
+//Solitara cual de los 10 tonos prediseñados necesitas
+void tonos(int tn){
+switch(tn){
+case 1:
+	Beep(330,250);Beep(330,350);Beep(330,350);Beep(262,250);
+    Beep(330,350);Beep(392,550);Beep(198,550);
+break;
+case 2:
+	Beep(220,300);Beep(294,300);Beep(294,300);Beep(370,300);
+	Beep(494,300);Beep(370,300);Beep(440,800);
+break;
+case 3:
+	Beep(329,300);Beep(493,300);Beep(698,300);Beep(659,600);
+	Beep(783,300);Beep(698,300);Beep(659,600);
+break;
+case 4:
+	Beep(1480,200);Beep(1568,200);
+	Beep(1568,200);Beep(1568,200);
+    Beep(734,200);Beep(784,200);Beep(784,200);Beep(784,200);
+    Beep(370,200);Beep(392,200);Beep(370,200);Beep(392,200);
+    Beep(392,400);Beep(196,400);
+break;
+case 5:
+	Beep(1568,200);Beep(1568,200);
+	Beep(1568,200);Beep(1245,1000);
+    Beep(1397,200);Beep(1397,200);
+    Beep(1397,200);Beep(1175,1000);
+break;
+case 6:
+	Beep(880,500);Beep(587,1000);
+	Beep(698,500);Beep(587,1000);
+	Beep(698,500);Beep(880,250);Beep(1046,250);
+	Beep(988,500);
+	Beep(784,500);Beep(698,250);Beep(784,250);Beep(880,500);
+	Beep(587,500);Beep(523,250);Beep(660,250);Beep(588,750);
+break;
+case 7:
+    Beep(660,500);Beep(495,250);Beep(528,250);Beep(594,250);
+	Beep(660,125);Beep(594,125);Beep(528,250);Beep(495,250);
+	Beep(440,500);Beep(440,250);Beep(528,250);Beep(660,500);
+	Beep(594,250);Beep(528,250);Beep(495,750);Beep(528,250);
+	Beep(594,500);Beep(660,500);Beep(528,500);Beep(440,500);
+	Beep(440,500);
+break;
+case 8:
+	Beep(370,465);Beep(370,232);Beep(554,465);Beep(494,465);
+	Beep(440,232);Beep(415,465);Beep(415,232);Beep(415,232);
+	Beep(494,465);Beep(440,232);Beep(415,232);Beep(370,232);
+	Beep(370,232);Beep(880,232);Beep(831,232);Beep(880,232);
+	Beep(831,232);Beep(880,232);Beep(370,465);Beep(370,232);
+	Beep(880,232);Beep(831,232);Beep(880,232);Beep(831,232);
+	Beep(880,232);Beep(370,465);
+break;
+case 9:
+	Beep(329,500);Beep(293,500);Beep(261,500);Beep(293,500);
+	Beep(329,500);Beep(329,500);Beep(329,1000);
+	Beep(293,500);Beep(293,500);Beep(293,1000);
+	Beep(329,500);Beep(392,500);Beep(392,1000);
+break;
+case 10:
+	Beep(659,700);Beep(659,250);Beep(783,250);Beep(659,700);
+	Beep(659,700);Beep(587,700);Beep(499,900);Beep(659,700);
+	Beep(659,250);Beep(783,250);Beep(659,700);Beep(659,350);
+	Beep(587,350);Beep(659,350);Beep(587,350);Beep(499,900);
+break;
+}
+}
+
+///COLOR NUMERICO
+//Solitara el Color en valor numerico
+void color(int num){
+	SetConsoleTextAttribute(hConsole,num);
+}
+
+///COMBOBOX
+//Creara un combobox con opciones solicita ejes y opciones
+int comboBox2(int x,int y,int largo, char *opc1, char *opc2){
+    int opc = 0, pos=1;
+    while(true){
+        cursor(false);
+        switch(opc){
+            case 77:
+            pos++;
+            if(pos>2){pos=1;}
+            break;
+            case 75:
+            pos--;
+            if(pos<1){pos=2;}
+            break;
+            case 13: //ENTER
+            switch(pos){
+                case 1:
+                    return 1;
+                break;
+                case 2:
+                    return 2;
+                break;
+            }
+        }
+        switch(pos){
+            case 1:
+                recuadro(x,y,largo,2);
+                gotoxy(x+4,y+1); cout << opc1;
+            break;
+            case 2:
+                recuadro(x,y,largo,2);
+                gotoxy(x+4,y+1); cout << opc2;
+            break;
+        }opc = getch();
+    }
+}
+int comboBox3(int x,int y,int largo, char *opc1, char *opc2, char *opc3){
+int opc = 0, pos=1;
+    while(true){
+    cursor(false);
+    switch(opc){
+        case 77:
+        pos++;
+        if(pos>3){pos=1;}
+        break;
+        case 75:
+        pos--;
+        if(pos<1){pos=3;}
+        break;
+        case 13: //ENTER
+            switch(pos){
+                case 1:
+                    return 1;
+                break;
+                case 2:
+                    return 2;
+                break;
+                case 3:
+                    return 3;
+                break;
+            }
+    }
+    switch(pos){
+        case 1:
+            recuadro(x,y,largo,2);
+            gotoxy(x+4,y+1); cout << opc1;
+        break;
+        case 2:
+            recuadro(x,y,largo,2);
+            gotoxy(x+4,y+1); cout << opc2;
+        break;
+        case 3:
+            recuadro(x,y,largo,2);
+            gotoxy(x+4,y+1); cout << opc3;
+        break;
+    }opc = getch();
+    }
+}
+int comboBox4(int x,int y,int largo, char *opc1, char *opc2, char *opc3, char *opc4){
+    int opc = 0, pos=1;
+    while(true){
+    cursor(false);
+    switch(opc){
+        case 77:
+        pos++;
+        if(pos>4){pos=1;}
+        break;
+        case 75:
+        pos--;
+        if(pos<1){pos=4;}
+        break;
+        case 13: //ENTER
+            switch(pos){
+                case 1:
+                    return 1;
+                break;
+                case 2:
+                    return 2;
+                break;
+                case 3:
+                    return 3;
+                break;
+                case 4:
+                    return 4;
+                break;
+            }
+        }
+        switch(pos){
+            case 1:
+                recuadro(x,y,largo,2);
+                gotoxy(x+4,y+1); cout << opc1;
+            break;
+            case 2:
+                recuadro(x,y,largo,2);
+                gotoxy(x+4,y+1); cout << opc2;
+            break;
+            case 3:
+                recuadro(x,y,largo,2);
+                gotoxy(x+4,y+1); cout << opc3;
+            break;
+            case 4:
+                recuadro(x,y,largo,2);
+                gotoxy(x+4,y+1); cout << opc4;
+            break;
+        }opc = getch();
+    }
+}
+int comboBox5(int x,int y,int largo, char *opc1, char *opc2, char *opc3, char *opc4, char *opc5){
+    int opc = 0, pos=1;
+    while(true){
+        cursor(false);
+        switch(opc){
+            case 77:
+            pos++;
+            if(pos>5){pos=1;}
+            break;
+            case 75:
+            pos--;
+            if(pos<1){pos=5;}
+            break;
+            case 13: //ENTER
+                switch(pos){
+                    case 1:
+                        return 1;
+                    break;
+                    case 2:
+                        return 2;
+                    break;
+                    case 3:
+                        return 3;
+                    break;
+                    case 4:
+                        return 4;
+                    break;
+                    case 5:
+                        return 5;
+                    break;
+                }
+        }
+        switch(pos){
+            case 1:
+                recuadro(x,y,largo,2);
+                gotoxy(x+4,y+1); cout << opc1;
+            break;
+            case 2:
+                recuadro(x,y,largo,2);
+                gotoxy(x+4,y+1); cout << opc2;
+            break;
+            case 3:
+                recuadro(x,y,largo,2);
+                gotoxy(x+4,y+1); cout << opc3;
+            break;
+            case 4:
+                recuadro(x,y,largo,2);
+                gotoxy(x+4,y+1); cout << opc4;
+            break;
+            case 5:
+                recuadro(x,y,largo,2);
+                gotoxy(x+4,y+1); cout << opc5;
+            break;
+        }opc = getch();
+    }
+}
+
+///DIBUJAR DADO
+//Crea dados prediseñados
+void dado(int x, int y, int valor){
+   recuadro(x,y,8,4);
+   switch(valor){
+   case 1:
+         gotoxy(x+4,y+2);cout<< char(254);
+         break;
+   case 2:
+         gotoxy(x+2,y+1);cout<<char(254);
+         gotoxy(x+6,y+3);cout<<char(254);
+         break;
+   case 3:
+         gotoxy(x+2,y+1);cout<<char(254);
+         gotoxy(x+4,y+2);cout<<char(254);
+         gotoxy(x+6,y+3);cout<<char(254);
+         break;
+   case 4:
+         gotoxy(x+2,y+1);cout<<char(254);
+         gotoxy(x+6,y+3);cout<<char(254);
+         gotoxy(x+6,y+1);cout<<char(254);
+         gotoxy(x+2,y+3);cout<<char(254);
+         break;
+   case 5:
+         gotoxy(x+2,y+1);cout<<char(254);
+         gotoxy(x+6,y+3);cout<<char(254);
+         gotoxy(x+4,y+2);cout<<char(254);
+         gotoxy(x+6,y+1);cout<<char(254);
+         gotoxy(x+2,y+3);cout<<char(254);
+         break;
+   case 6:
+         gotoxy(x+2,y+1);cout<<char(254);
+         gotoxy(x+6,y+3);cout<<char(254);
+         gotoxy(x+6,y+1);cout<<char(254);
+         gotoxy(x+2,y+3);cout<<char(254);
+         gotoxy(x+6,y+2);cout<<char(254);
+         gotoxy(x+2,y+2);cout<<char(254);
+         break;
+   }
+}
+
+///SUBRAYADO
+//Subraya el texto que le pases
+void subrayar(char* color_texto,char* texto){
+	int letra;
+	if(strcmp(color_texto,"negro")==0)           {letra=7;}
+	else if(strcmp(color_texto,"azul")==0)       {letra=31;}
+	else if(strcmp(color_texto,"verde")==0)      {letra=47;}
+	else if(strcmp(color_texto,"aguamarina")==0) {letra=159;}
+	else if(strcmp(color_texto,"rojo")==0)       {letra=79;}
+	else if(strcmp(color_texto,"morado")==0)     {letra=223;}
+	else if(strcmp(color_texto,"amarillo")==0)   {letra=111;}
+	else if(strcmp(color_texto,"blanco")==0)     {letra=240;}
+	else if(strcmp(color_texto,"gris")==0)       {letra=240;}
+	else if(strcmp(color_texto,"verdeclaro")==0) {letra=175;}
+	else if(strcmp(color_texto,"celeste")==0)    {letra=63;}
+	else if(strcmp(color_texto,"salmon")==0)     {letra=207;}
+	else if(strcmp(color_texto,"violeta")==0)    {letra=95;}
+	color(letra);cout<<texto;color(7);
+}
+
+///PANTALLA COMPLETA
+//Se creara una pantalla completa
+void pantallaCompleta(){
+    keybd_event(VK_MENU,0x38,0,0);
+    keybd_event(VK_RETURN,0x1c,0,0);
+    keybd_event(VK_RETURN,0x1c,KEYEVENTF_KEYUP,0);
+    keybd_event(VK_MENU,0x38,KEYEVENTF_KEYUP,0);
+    return;
+}
+
+///MENSAJE EMERGENTE
+//Se creara un mensaje por una ventana emergente
+void mensajeEmergente(string mensajeMostrar,string tituloVentana){
+	MessageBox(NULL,mensajeMostrar.c_str(),tituloVentana.c_str(),MB_ICONEXCLAMATION | MB_OK);
+}
+
+///CARACTERES
+//Se encarga de mostrar todas los codigo ASCII de los caracteres
+void caracteresASCII(){
+	for(int x=33;x<=254;x++){
+	if(x==33||x==48||x==58||x==65||x==91||x==97||x==123||x==166||x==224||x==238){
+	cout<<endl;}color("blanco");cout<<"CARACTER: '";
+	if(x<=47){color("rojo");}
+	else if(x<=57){color("azul");}
+	else if(x<=64){color("verde");}
+	else if(x<=90){color("aguamarina");}
+	else if(x<=96){color("morado");}
+	else if(x<=122){color("amarillo");}
+	else if(x<=165){color("salmon");}
+	else if(x<=223){color("verdeclaro");}
+	else if(x<=237){color("celeste");}
+	else{color("violeta");}cout<<char(x);
+	color("blanco");cout<<"' = char(";
+	if(x<=47){color("rojo");}
+	else if(x<=57){color("azul");}
+	else if(x<=64){color("verde");}
+	else if(x<=90){color("aguamarina");}
+	else if(x<=96){color("morado");}
+	else if(x<=122){color("amarillo");}
+	else if(x<=165){color("salmon");}
+	else if(x<=223){color("verdeclaro");}
+	else if(x<=237){color("celeste");}
+	else{color("violeta");}cout<<x;
+	color("blanco");cout<<")"<<endl;
+}
 }
 
 

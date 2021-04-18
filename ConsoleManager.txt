@@ -1,58 +1,83 @@
+------------------------------------------------------------------------
+
 Fundadores de la biblioteca "ConsoleManager":
 Adriel Elian Rasjido - Alan Gabriel Vaca.
+
+------------------------------------------------------------------------
 
 (Biblioteca colaborativa - UTN FRGP)
 PARA MAS INFO MIRAR VIDEO DE YOUTUBE Y/O CONSULTAR EN EL DISCORD
 
-AVERTENCIA: ESTE DOCUMENTO NO DEBE SER BORRADO EN LA IMPLEMENTACION DE TU PROYECTO
-ASI MISMO LOS DESCARGABLES COMO LA "LICENCE" Y EL ".H"
+AVERTENCIA: ESTE DOCUMENTO NO DEBE SER BORRADO EN LA IMPLEMENTACION DE 
+TU PROYECTO ASI MISMO LOS DESCARGABLES COMO LA "LICENCE" Y EL ".H"
 
+------------------------------------------------------------------------
 NOTAS DE ACTUALIZACIONES:
-
-Version 1.X: // Partipantes de esta version: 
+------------------------------------------------------------------------
+VERSION 1.X: // Partipantes de esta version: 
 Adriel Elian Rasjido 
 Alan Gabriel Vaca
 Jose Enrique Menendez
+------------------------------------------------------------------------
 
-1-titulo 		  
-(permite cambiar el titulo de la consola)
-2-gotoxy 		
-(ubica la entrada en la posicion x,y)
-3-cursor 		
-(visualiza el cursor de entrada)
-4-recuadro 		
-(realiza recuadros o cuadros)
-5-gamadecolores 	
-(visualiza toda la gama de colores)
-6-color 		
-(permite cambiar el color del texto)
-7-fondo 		
-(permite cambiar el color del background)
-8-menuvertical 		
-(crea menues verticales de 2 a 5 opciones)
-9-menuhorizontal 	
-(crea menues horizontales de 2 a 5 opciones)
-10-probabilidad 	
-(facilita la posibilidad de crear una i.a simple con probabilidades)
-11-margentextoescribir 	
-(permite ingresar dentro de un marge establecido)
-12-margentextomostrar 	
-(permite mostrar lo ingresado dentro de un margen establecido)
-13-numeros 		
-(crea numeros grandes para tu programa)
-14-letras 		
-(crea letras grandes para tu programa)
-15-notas 		
-(puedes reproducir las 7 notas musicales a gusto)
+F01-TITULO			CREA UN TITULO A LA VENTANA
+F02-GOTOXY			UBICA EL CURSOR
+F03-CURSOR			QUITA EL CURSOR
+F04-RECUADRO			CREAR UN RECUADRO
+F05-GAMACOLORES			MUESTRA TODOS LOS COLORES
+F06-COLOR			CAMBIA DE COLOR AL TEXTO POR NOMBRE
+F07-FONDO			CAMBIA EL COLOR DE FONDO Y TEXTO
+F08-MENUVERTICAL		CREA MENUES VERTICALES 
+F09-MENUHORIZONTAL 		CREA MENUES HORIZONTALES 
+F10-PROBABILIDAD		CREA UN BOOLEANO DE PROBABILIDAD
+F11-MARGENTEXTOESCRIBIR		CREA UN MARGEN CON SALTO DE LINEA
+F12-MARGENTEXTOMOSTRAR		MUESTRA ESE SALTO DE LINEA
+F13-NUMEROS			CREA NUMEROS GRANDES 
+F14-LETRAS			CREA LETRAS GRANDES 
+F15-NOTAS			SONARAN LAS NOTAS MUSICALES 
 
+------------------------------------------------------------------------
+VERSION 2.X: // Partipantes de esta version: 
+Adriel Elian Rasjido 
+Alan Gabriel Vaca
+Jose Enrique Menendez
+Yesica Regina Laurentino Goncalves
+------------------------------------------------------------------------
+
+F16-CONSOLEMANAGER		ACCESO A LA PRESENTACION Y LINKS
+F17-PANTALLA			AJUSTA EL TAMAÑO DE LA PANTALLA
+F18-TONOS			CREA TONOS MUSICALES PREDISEÑADOS
+F19-COLOR NUMERICO		CAMBIA EL COLOR AL TEXTO POR NUMERO
+F20-COMBOBOX			CREA COMBOBOX PREDISEÑADOS
+F21-DADO			MUESTRA UN DADO DIBUJADO 
+F22-SUBRAYAR			SUBRAYA EL CONTENIDO QUE LE PASES
+F23-PANTALLACOMPLETA		AJUSTA LA PANTALLA A PANTALLA COMPLETA
+F24-MENSAJE EMERGENTE		SALTA UN MENSAJE EMERGENTE
+F25-CARACTERESASCII		MUESTRA TODOS LOS CODIGOS ASCII
+
+PARCHE 2.X:
+
+P26-GAMADECOLORES 		NUEVOS COLORES AGREGADOS
+P27-NOTAS			PONE LIMITE AL TIMBRE
+P28-COLOR TEXTUAL		NUEVOS COLORES AGREGADOS
+P29-GOTOXY			SOLUCION AL ERROR DE PARAMETROS
+P30-FONDO			NUEVOS COLORES AGREGADS
+
+------------------------------------------------------------------------
 ENLACES:
+------------------------------------------------------------------------
 UTNFRGP:
 https://www.frgp.utn.edu.ar
+------------------------------------------------------------------------
 Canal Oficial de Youtube:
 https://www.youtube.com/channel/UCS_-386mFHUuaviv4DWTAjg
+------------------------------------------------------------------------
 Video Introductorio:
 https://youtu.be/RI5D2YiKIh8
+------------------------------------------------------------------------
 Repositorio:
 https://github.com/AdrielRasjidoSBK/ConsoleManager
+------------------------------------------------------------------------
 Discord de la comunidad:
 https://discord.gg/NmC7wSjeCT
+------------------------------------------------------------------------
